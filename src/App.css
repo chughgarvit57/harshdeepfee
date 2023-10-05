@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Navigation Section Styling Start */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation_bar{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation_bar ul{
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navigation_bar .left-logo h1{
+  text-transform: uppercase;
+  padding: 15px 0;
+  color: black;
+}
+
+.navigation_bar ul li{
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.navigation_bar ul li a{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Navigation Section Styling End */
+
+/* Banner section styling start */
+
+
+.padd-30{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container{
+  background-color: red;
+  max-width: 1300px;
+  margin: auto;
+}
+
+
+
+
+/* Banner section styling end */
+
+
+
+/* Responsive for screens <= 425px */
+@media (max-width:425px){
+  .right-nav ul li a.active{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .right-nav ul li{
+    display: block;
+    top: 80px;
   }
 }
